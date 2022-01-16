@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Password</th>
+            <th></th>
+            <th></th>        
+        </tr>
+        <tbody>
+            {{#each list}}
+            <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.pno}}</td>
+            <td>{{this.password}}</td>
+            <td><a href="employee-updatedata/{{this.id}}" class="btn btn-primary">Update</a></td>
+            <td><a href="employee-delete/{{this.id}}" class="btn btn-danger">Delete</a></td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+    </thead>
+</table>
